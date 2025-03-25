@@ -280,7 +280,7 @@ head(merged_data)
 ```
 
 
-I next generated the chromosome files for chromsomes 1-10 for the increasing position order, omitting the NA entries that correspond to multiple or unknown chromosome positions. I first filtered out the data with non-numeric position types.
+I next generated the chromosome files for chromsomes 1-10 for the increasing position order, filtering out the data with non-numeric position types.
 
 ```{R}
 make_chromosome_file <- function(dataset_row, species, order, missing_marker, dataset){
@@ -392,7 +392,7 @@ head(merged_data)
 ```
 
 
-I next generated the chromosome files for chromsomes 1-10 for the increasing position order, omitting the NA entries that correspond to multiple or unknown chromosome positions.
+I next generated the chromosome files for chromsomes 1-10 for the increasing position order, filtering out the data with non-numeric position types.
 
 ```{R}
 make_chromosome_file <- function(dataset_row, species, order, missing_marker, dataset){
